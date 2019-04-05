@@ -1,12 +1,10 @@
-# API Context Guide #
-======
-
+API Context Guide
 
 Bringing the API schema to life! In this document you will find the context around using the API. What calls to make and when, what fields to use and why.
 
-<h2>The API Schema</h2>
+The API Schema
 
-<h3>Verification Services</h3>
+Verification Services
 
 These are services that can be used to verify the identity of an individual. Which services to use and when will be covered shortly.
 
