@@ -6,7 +6,7 @@ Welcome to GBG's IDaaS Github, here you will find usefull guides on how to integ
 Please use the content sbelow to take you to the relevant guides:
 
 <ul>
-  <li>OAuth Integration</li>
+  <li><a href="">OAuth Integration</a></li>
   <li>Identity Solution REST API usage</li>
   <li>Verification Services</li>
   <li>Schema (SwaggerHub etc)</li>
