@@ -1,0 +1,69 @@
+Identity Solution: Authentication Process
+
+The GBG Identity Solution uses an authentication process called ‘OAuth’ to control access.
+
+The OAuth framework allows access via ‘Access Tokens’ instead of the traditional username & password controls.
+
+In order to create the ‘Access Tokens’ the GBG Identity Solution requires a client to first prove their identity via a ‘Federated - Identity Provider’. Where
+
+- ‘Federated’ means “an agreed arrangement that allows trust between two or more systems”
+
+- ‘Identity Provider’ means “a system that is trusted to check identity”.
+
+In other words, GBG Identity Solution will give an ‘Access Token’ in return for a trusted identity from a known Identity Provider in it’s Federated environment.
+
+Example
+
+For example, GBG’s Identity Solution trusts Microsoft’s Office 365 as an Identity Provider in it’s Federated Network. Therefore, if a client uses Microsoft’s Office 365 to logon (prove Identity), then GBG’s Identity Solution will return an ‘Access Token’ in exchange for this available and trusted logon process.
+
+There are many advantages to this Federated process, including:
+
+1. Client has control over the logon method / process and policies for strength etc
+
+2. Client does not introduce another logon screen to individuals in it’s organisation
+
+3. Client does not have to add another identity system to their security processes
+
+Pre-requisites
+
+In order to access the GBG Identity Solution a client is required to submit the following details (for reasons stated above):
+
+1. A domain for the organisation
+
+2. An administrator email address from the domain
+
+3. A URL relating to the Identity Provider which will be used see below for examples
+
+For point 1 – the domain will be used to identify organisation users and redirect individual’s logging into GBG Identity Solution to their own logon page
+
+For point 2 – the administrator created will be given full access to the GBG Identity Solution, whereas other individuals in the domain will be given access to limited functionality (until the administrator has confirmed to the contrary)
+
+For point 3 – the URL will be used to both redirect the individual logging into GBG Identity Solution to their own logon page, and to ensure that this Identity Provider is a trusted part of the Federated Network (a list of Identity Providers can be found in the appendix).
+
+An Example Logon Flow
+
+1. User Navigates to GBG Identity Solution
+
+(replace with actual page)
+
+2. User Types Email Address into Logon Page
+
+(replace with actual page)
+
+3. User is Re-directed to Identity Provider Page
+
+(replace with actual page)
+
+4. User Logs In Using Normal Organisation Network Credentials
+
+(replace with actual page)
+
+5. User is Re-directed back to GBG Identity Solution now Logged In
+
+(replace with actual page)
+
+Appendix
+
+Examples of Trusted Identity Provider
+
+· Microsoft Office 365 – with URL -> https://login.microsoftonline.com/<tenant name>/v2.0/.well-known/openid-configurationGoogle – with URL -> https://accounts.google.com/.well-known/openid-configuration
